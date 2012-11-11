@@ -7,17 +7,70 @@
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<!-- Gallery Code -->
+<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
 
 <title>Natural Capital</title>
 </head>
 
 <body>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto({ theme: 'dark_rounded' });
+    });
+  </script>
+  <div id="header"></div>
   <div id="wrapper">
-    <div id="header"></div>
+    
     <div id="content">
       <div id="map">
         
-        
+        <ul id="nodes" class="nodes">
+    		   <li>
+    		   	<a href="#">Jerico Park</a>
+    		   	<audio id="beep-two" controls preload="auto">
+    				<source src="audio/beep.mp3" controls></source>
+    				<source src="audio/beep.ogg" controls></source>
+    			</audio>
+    			</li>
+    		   <li><a href="#">Camosun Bog</a></li>
+    		   <li><a href="#">Stanley Park - Lost Lagoon</a></li>
+    		   <li><a href="#">West 4th and Chancellor</a></li>
+    		   <li><a href="#">Trout Lake</a></li>
+    		</ul>
+
+    		<script>$("#nav-two a")
+          .each(function(i) {
+            if (i != 0) { 
+              $("#beep-two")
+                .clone()
+                .attr("id", "beep-two" + i)
+                .appendTo($(this).parent()); 
+            }
+            $(this).data("beeper", i);
+          })
+          .mouseenter(function() {
+            $("#beep-two" + $(this).data("beeper"))[0].play();
+          });
+        $("#beep-two").attr("id", "beep-two0");
+      </script>
+      <div class="posters">
+          <a href="images/fullscreen/1.jpg"  rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="Red round shape" /></a>
+
+          <a href="images/fullscreen/2.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="Nice building" /></a>
+
+          <a href="images/fullscreen/3.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="Fire!" /></a>
+
+          <a href="images/fullscreen/4.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="Rock climbing" /></a>
+
+          <a href="images/fullscreen/5.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="Fly kite, fly!" /></a>
+      </div>
+
         
       </div>
 

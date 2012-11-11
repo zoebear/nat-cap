@@ -2,12 +2,111 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>natCapMap.html</string>
 	<key>documents</key>
-	<array/>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>natCap.css</string>
+			<key>lastUsed</key>
+			<date>2012-11-06T09:18:48Z</date>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>fonts</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>fonts</string>
+		</dict>
+		<dict>
+			<key>expanded</key>
+			<true/>
+			<key>name</key>
+			<string>images</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>images</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>natcap.ai</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>natCap.css</string>
+			<key>lastUsed</key>
+			<date>2012-11-07T00:03:35Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>natCapMap.html</string>
+			<key>lastUsed</key>
+			<date>2012-11-07T00:03:35Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>natural capital.tmproj</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>README.md</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Resources</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>Resources</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>images/nodeMap.png</string>
+		</dict>
+	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>254</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>natCap.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>natCapMap.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>25</integer>
+				<key>line</key>
+				<integer>27</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>natCap.css</string>
+		<string>natCapMap.html</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
