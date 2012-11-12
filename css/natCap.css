@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@font-face {
+  font-family: zapfino;
+  src: url('fonts/Zapfino.ttf'),
+       url('fonts/Zapfino.eot'); /* IE */
+}
+
+
+* {
+ padding: 0;
+ margin: 0;
+}
+body {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* style from the DFS site */
+#header {
+  background: url('images/headerPlaceholder.jpg') center top no-repeat;
+  min-width: 1024px;
+  width: 100%;
+  height: 145px;
+}
+#container {
+	width: 100%;
+	height: auto;
+	/* height: 2030px;*/
+	position: relative;
+	top: 0px;	
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+}
+
+#container-inner {
+	background: #fff;
+	padding: 0px;
+	height: auto;
+	/* height: 1750px;*/
+	position: relative;
+	margin: 0 auto;
+	top: 0px;
+}
+#wrapper {
+	min-width: 1024px;
+  max-width: 1280px;
+	min-height: 768px;
+	margin: 0 auto;
+	background-color: #333333;
+}
+
+#content { 
+  min-width: 780px;
+  max-width: 1280px;
+}
+#map {
+  background: url('images/nodeMap2.png') top center no-repeat;
+  width: 100%;
+  height: 812px;
+}
+h1.title {
+  font-family: zapfino;
+  font-size: 20px;
+}
+h2 {
+  font-size: 16px;
+}
+/* Start of radial node menus */
+
+#radial_container { 
+  position: relative;
+  bottom: 59%;
+  left: 47%;
+	width:200px; 
+	height:200px; 
+	text-align:center;
+}
+.radial_div_item {
+	background-color:none;
+	height:30px;
+	padding:10px;
+	color:#234;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	cursor:pointer;
+}
+.radial_div_item.active { 
+	background-color:#511; color:white;
+	padding: 10px; 
+	-moz-border-radius:40px;
+	z-index:100;
+}
+.my_class { 
+	font-size:1.5em; 
+	color:#abc;
+	background-color:#def;
+	-moz-border-radius:30px;
+	width:30px;
+	height:30px;
+	-webkit-border-radius:30px;
+}
+#nodes {
+  width: 100%;
+  height: 100%;
+  
+}
+.posters{
+  position: relative;
+  background: url('images/leaf.png') no-repeat;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+} 
+#radial_container_w { 
+  position: relative;
+  top: 48.3%;
+  left:10.9%;
+	width:200px; 
+	height:200px; 
+	text-align:center;
+} 
+.west4 {
+  position: relative;
+  background: url('images/west4.png') no-repeat;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+#radial_container_j { 
+  position: relative;
+  top: 19.8%;
+  left: 26.35%;
+  width:200px; 
+  height:200px; 
+  text-align:center;
+}
+.jericho {
+  position: relative;
+  background: url('images/jericho.png') no-repeat;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+#radial_container_c { 
+  position: relative;
+  bottom: 49%;
+  left: 51.1%;
+  width:200px; 
+  height: 200px; 
+  text-align:center;
+}
+.camosun {
+  position: relative;
+  background: url('images/camosun.png') no-repeat;
+  top: 267.5%;
+  right: 151%;
+  width: 100px;
+  height: 100px;
+}
+#radial_container_l { 
+  position: relative;
+  bottom: 60.7%;
+  left: 54.1%;
+  width:200px; 
+  height:200px; 
+  text-align:center;
+}
+.lostLagoon {
+  position: relative;
+  background: url('images/lostlagoon.png') no-repeat;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+#radial_container_t { 
+  position: relative;
+  float: right;
+  bottom: 42.4%;
+  left: 4.25%;
+  width:200px; 
+  height:200px; 
+  text-align:center;
+}
+.troutLake {
+  position: relative;
+  background: url('images/troutlake.png') no-repeat;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+/*end of radial node menus */
+#footer {
+  background: url('images/footerPlaceholder.jpg') center top no-repeat;
+  min-width: 1024px;
+  width: 100%;
+  height: 131px;
+}

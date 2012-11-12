@@ -2,81 +2,284 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">  
+<link rel="stylesheet" href="css/natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!-- Gallery Code -->
 <script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
 
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/nat-cap.js" type="text/javascript" charset="utf-8"></script>
 
 
 <title>Natural Capital</title>
 </head>
 
 <body>
-  <script type="text/javascript" charset="utf-8">
-    $(document).ready(function(){
-      $("a[rel^='prettyPhoto']").prettyPhoto({ theme: 'dark_rounded' });
-    });
-  </script>
+
   <div id="header"></div>
   <div id="wrapper">
     
     <div id="content">
       <div id="map">
+        <h1 class="title">Natural Capital</h1>
+        <h2>Exploring the wetlands of the Greater Vancouver Area</h2>
+        <!-- West 4th and Chancellor -->
+        <div id='radial_container_w'>
+          <div class="west4">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
         
-        <ul id="nodes" class="nodes">
-    		   <li>
-    		   	<a href="#">Jerico Park</a>
-    		   	<audio id="beep-two" controls preload="auto">
-    				<source src="audio/beep.mp3" controls></source>
-    				<source src="audio/beep.ogg" controls></source>
-    			</audio>
-    			</li>
-    		   <li><a href="#">Camosun Bog</a></li>
-    		   <li><a href="#">Stanley Park - Lost Lagoon</a></li>
-    		   <li><a href="#">West 4th and Chancellor</a></li>
-    		   <li><a href="#">Trout Lake</a></li>
-    		</ul>
-
-    		<script>$("#nav-two a")
-          .each(function(i) {
-            if (i != 0) { 
-              $("#beep-two")
-                .clone()
-                .attr("id", "beep-two" + i)
-                .appendTo($(this).parent()); 
-            }
-            $(this).data("beeper", i);
-          })
-          .mouseenter(function() {
-            $("#beep-two" + $(this).data("beeper"))[0].play();
-          });
-        $("#beep-two").attr("id", "beep-two0");
-      </script>
-      <div class="posters">
-          <a href="images/fullscreen/1.jpg"  rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="Red round shape" /></a>
-
-          <a href="images/fullscreen/2.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="Nice building" /></a>
-
-          <a href="images/fullscreen/3.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="Fire!" /></a>
-
-          <a href="images/fullscreen/4.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="Rock climbing" /></a>
-
-          <a href="images/fullscreen/5.jpg"  rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="Fly kite, fly!" /></a>
-      </div>
-
+        <!-- Jericho Node -->
+        <div id='radial_container_j'>
+          <div class="jericho">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
         
+        <!-- Camosun Node -->
+        <div id='radial_container_c'>
+          <div class="camosun">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
+        
+        <!-- Lost Lagoon Node -->
+        <div id='radial_container_l'>
+          <div class="lostLagoon">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
+        
+        <!-- Trout LakeNode -->
+        <div id='radial_container_t'>
+          <div class="troutLake">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
+      		   
+<!-- OCAD posters -->
+      <div id='radial_container'>
+        <div class="posters">
+        	<ul class='list'>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/annual_carbon_uptake.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+        		    <img src="images/annual_carbon_uptake.jpg" width="30" height="30" alt="annual carbon uptake" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Biological-Control.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Biological-Control.jpg" width="30" height="30" alt="biological control" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Culture.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Culture.jpg" width="30" height="30" alt="culture" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/culture-poster.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/culture-poster.jpg" width="30" height="30" alt="culture" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Filtration_SQUARE.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Filtration_SQUARE.jpg" width="30" height="30" alt="filteration square" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Flood_Control.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Flood_Control.jpg" width="30" height="30" alt="Flood Control" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/habitat-poster.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+        		    <img src="images/habitat-poster.jpg" width="30" height="30" alt="habitat poster" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/pollination-poster.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/pollination-poster.jpg" width="30" height="30" alt="pollination poster" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Recreation.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Recreation.jpg" width="30" height="30" alt="Recreation" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Regulation.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Regulation.jpg" width="30" height="30" alt="Regulation" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/Removal-of-Air-Pollutants.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/Removal-of-Air-Pollutants.jpg" width="30" height="30" alt="Removal of Air Pollutants" />
+        		  </a></div>
+        		</li>
+        		<li class='item'><div class='my_class'>
+        		  <a href="images/sediment_retention.jpg" rel="prettyPhoto[pp_gal]">
+        		    <img src="images/sediment_retention.jpg" width="30" height="30" alt="sediment retention" />
+        		  </a></div>
+        		</li>
+        			</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/seeddispersal-poster.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/seeddispersal-poster.jpg" width="30" height="30" alt="seeddispersal poster" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/stored_carbon_forests.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/stored_carbon_forests.jpg" width="30" height="30" alt="stored carbon forests" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Waste-Treatment.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Waste-Treatment.jpg" width="30" height="30" alt="Waste Treatment" />
+          		  </a></div>
+          		</li>
+        	</ul>
+        </div>
       </div>
-
+<!-- end OCAD posters -->    
     </div>
-
-    
   </div>
   <div id="footer"></div>
 </body>
