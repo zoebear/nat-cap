@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+		<style>
+			.p1 {
+				font-size:36px;
+				display: block;
+				background-color: #ff0000;
+				height: 300px;
+				width: 500px;
+			}
+			
+			.p2 {
+				font-size:36px;
+				display: none;
+				background-color: #00ff00;
+				height: 300px;
+				width: 500px;
+			}
+    </style>
+  </head>
+  <body>
+    <div id='p1' class='p1' onClick="makepInvisible('p2,'p1')">
+    p1
+    </div>
+    <div id='p2' class='p2' onClick="makepInvisible('p1','p2')">
+    p2
+    </div>
+    <script>
+	  
+	  function makeInvisible (div1, div2);{
+		  var d1=document.getElementById(div1);
+		  d1.style.display='block';
+		  var d2=document.getElementById(div2);
+		  d2.style.display='none';
+	  }
+	  
+    </script>
+  </body>
+</html>
