@@ -2,8 +2,9 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">  
-<link rel="stylesheet" href="css/natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+<link rel="stylesheet" href="natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -11,6 +12,10 @@
 <!-- Gallery Code -->
 <script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.4.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
 
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
@@ -27,15 +32,18 @@
   <div id="wrapper">
     
     <div id="content">
+      
       <div id="map">
-        <h1 class="title">Natural Capital</h1>
-        <h2>Exploring the wetlands of the Greater Vancouver Area</h2>
+        <div class="leftGradient"><span class="rightGradient"></span></div>
+        
+        <!--<h1 class="title">Natural Capital</h1>
+        <h2>Exploring the wetlands of the Greater Vancouver Area</h2>-->
         <!-- West 4th and Chancellor -->
-        <div id='radial_container_w'>
+        <div class='radial_container' id='radial_container_w' data-x="60" data-y="-50">
           <div class="west4">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto" title="">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -64,7 +72,7 @@
         </div>
         
         <!-- Jericho Node -->
-        <div id='radial_container_j'>
+        <div class='radial_container' id="radial_container_j" data-x="50" data-y="-50">
           <div class="jericho">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
@@ -97,7 +105,7 @@
         </div>
         
         <!-- Camosun Node -->
-        <div id='radial_container_c'>
+        <div class='radial_container' id='radial_container_c' data-x="70" data-y="-30">
           <div class="camosun">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
@@ -130,7 +138,7 @@
         </div>
         
         <!-- Lost Lagoon Node -->
-        <div id='radial_container_l'>
+        <div class='radial_container' id='radial_container_l'data-x="50" data-y="-150">
           <div class="lostLagoon">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
@@ -163,7 +171,7 @@
         </div>
         
         <!-- Trout LakeNode -->
-        <div id='radial_container_t'>
+        <div class='radial_container' id='radial_container_t' data-x="50" data-y="-50">
           <div class="troutLake">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
@@ -194,91 +202,95 @@
           	</ul>
           </div>
         </div>
-      		   
-<!-- OCAD posters -->
-      <div id='radial_container'>
-        <div class="posters">
-        	<ul class='list'>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/annual_carbon_uptake.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
-        		    <img src="images/annual_carbon_uptake.jpg" width="30" height="30" alt="annual carbon uptake" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Biological-Control.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Biological-Control.jpg" width="30" height="30" alt="biological control" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Culture.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Culture.jpg" width="30" height="30" alt="culture" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/culture-poster.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/culture-poster.jpg" width="30" height="30" alt="culture" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Filtration_SQUARE.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Filtration_SQUARE.jpg" width="30" height="30" alt="filteration square" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Flood_Control.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Flood_Control.jpg" width="30" height="30" alt="Flood Control" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/habitat-poster.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
-        		    <img src="images/habitat-poster.jpg" width="30" height="30" alt="habitat poster" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/pollination-poster.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/pollination-poster.jpg" width="30" height="30" alt="pollination poster" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Recreation.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Recreation.jpg" width="30" height="30" alt="Recreation" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Regulation.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Regulation.jpg" width="30" height="30" alt="Regulation" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/Removal-of-Air-Pollutants.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/Removal-of-Air-Pollutants.jpg" width="30" height="30" alt="Removal of Air Pollutants" />
-        		  </a></div>
-        		</li>
-        		<li class='item'><div class='my_class'>
-        		  <a href="images/sediment_retention.jpg" rel="prettyPhoto[pp_gal]">
-        		    <img src="images/sediment_retention.jpg" width="30" height="30" alt="sediment retention" />
-        		  </a></div>
-        		</li>
-        			</li>
+  <!-- OCAD posters -->
+        <div class='radial_container' id="radial_container" data-x="75" data-y="-25" data-radial="200">
+          <div class="posters">
+          	<ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/seeddispersal-poster.jpg" rel="prettyPhoto[pp_gal]">
-          		    <img src="images/seeddispersal-poster.jpg" width="30" height="30" alt="seeddispersal poster" />
+          		  <a href="images/annual_carbon_uptake.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+          		    <img src="images/annual_carbon_uptake.jpg" width="30" height="30" alt="annual carbon uptake" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/stored_carbon_forests.jpg" rel="prettyPhoto[pp_gal]">
-          		    <img src="images/stored_carbon_forests.jpg" width="30" height="30" alt="stored carbon forests" />
+          		  <a href="images/Biological-Control.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Biological-Control.jpg" width="30" height="30" alt="biological control" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Waste-Treatment.jpg" rel="prettyPhoto[pp_gal]">
-          		    <img src="images/Waste-Treatment.jpg" width="30" height="30" alt="Waste Treatment" />
+          		  <a href="images/Culture.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Culture.jpg" width="30" height="30" alt="culture" />
           		  </a></div>
           		</li>
-        	</ul>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/culture-poster.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/culture-poster.jpg" width="30" height="30" alt="culture" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Filtration_SQUARE.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Filtration_SQUARE.jpg" width="30" height="30" alt="filteration square" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Flood_Control.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Flood_Control.jpg" width="30" height="30" alt="Flood Control" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/habitat-poster.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+          		    <img src="images/habitat-poster.jpg" width="30" height="30" alt="habitat poster" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/pollination-poster.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/pollination-poster.jpg" width="30" height="30" alt="pollination poster" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Recreation.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Recreation.jpg" width="30" height="30" alt="Recreation" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Regulation.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Regulation.jpg" width="30" height="30" alt="Regulation" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/Removal-of-Air-Pollutants.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/Removal-of-Air-Pollutants.jpg" width="30" height="30" alt="Removal of Air Pollutants" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/sediment_retention.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/sediment_retention.jpg" width="30" height="30" alt="sediment retention" />
+          		  </a></div>
+          		</li>
+          			</li>
+            		<li class='item'><div class='my_class'>
+            		  <a href="images/seeddispersal-poster.jpg" rel="prettyPhoto[pp_gal]">
+            		    <img src="images/seeddispersal-poster.jpg" width="30" height="30" alt="seeddispersal poster" />
+            		  </a></div>
+            		</li>
+            		<li class='item'><div class='my_class'>
+            		  <a href="images/stored_carbon_forests.jpg" rel="prettyPhoto[pp_gal]">
+            		    <img src="images/stored_carbon_forests.jpg" width="30" height="30" alt="stored carbon forests" />
+            		  </a></div>
+            		</li>
+            		<li class='item'><div class='my_class'>
+            		  <a href="images/Waste-Treatment.jpg" rel="prettyPhoto[pp_gal]">
+            		    <img src="images/Waste-Treatment.jpg" width="30" height="30" alt="Waste Treatment" />
+            		  </a></div>
+            		</li>
+          	</ul>
+          </div>
+
         </div>
-      </div>
-<!-- end OCAD posters -->    
+  <!-- end OCAD posters -->
+        
+      </div>		   
+
+    
     </div>
   </div>
   <div id="footer"></div>
