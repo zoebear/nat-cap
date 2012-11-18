@@ -5,23 +5,18 @@
 
 <link rel="stylesheet" href="natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
+<link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
 <!-- Gallery Code -->
-<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
+<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script  src='js/jQuery.radmenu.min.js' type='text/javascript' charset="utf-8"></script>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.lightbox-0.4.js"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
-
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-
-<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.nyroModal.custom.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/nat-cap.js" type="text/javascript" charset="utf-8"></script>
-
 
 <title>Natural Capital</title>
 </head>
@@ -32,38 +27,39 @@
   <div id="wrapper">
     
     <div id="content">
-      
+      <div class="leftGradient"><span class="rightGradient"></span></div>
       <div id="map">
-        <div class="leftGradient"><span class="rightGradient"></span></div>
+        
         
         <!--<h1 class="title">Natural Capital</h1>
         <h2>Exploring the wetlands of the Greater Vancouver Area</h2>-->
+        
         <!-- West 4th and Chancellor -->
-        <div class='radial_container' id='radial_container_w' data-x="60" data-y="-50">
-          <div class="west4">
+        <div class='radial_container' id='radial_container_w' data-x="45" data-y="-50">
+          <div id="west4" class="radial_inner" title="West 4th and Chancellor">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto" title="">
+          		  <a href="images/fullscreen/1.jpg"  title="Sarah R">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/2.jpg" title="experimentalW4">
           		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/3.jpg"  >
           		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/4.jpg"  >
           		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/5.jpg">
           		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -72,31 +68,31 @@
         </div>
         
         <!-- Jericho Node -->
-        <div class='radial_container' id="radial_container_j" data-x="50" data-y="-50">
-          <div class="jericho">
+        <div class='radial_container' id="radial_container_j" >
+          <div id="jericho" class="radial_inner" title="Jerico">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		  <a href="images/fullscreen/1.jpg" title="experimentalJB">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/2.jpg" title="stephenCampbell">
           		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/3.jpg" title="jeanGuy">
           		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/4.jpg" title="annaKim">
           		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/5.jpg">
           		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -105,31 +101,31 @@
         </div>
         
         <!-- Camosun Node -->
-        <div class='radial_container' id='radial_container_c' data-x="70" data-y="-30">
-          <div class="camosun">
+        <div class='radial_container' id='radial_container_c' >
+          <div id="camosun" class="radial_inner">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		  <a href="images/fullscreen/1.jpg" title="larryGrant">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/2.jpg"title="patAndzavi">
           		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/3.jpg" title="gallopFan">
           		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/4.jpg" title="experimentalCB">
           		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/5.jpg" title="">
           		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -138,31 +134,31 @@
         </div>
         
         <!-- Lost Lagoon Node -->
-        <div class='radial_container' id='radial_container_l'data-x="50" data-y="-150">
-          <div class="lostLagoon">
+        <div class='radial_container' id='radial_container_l'>
+          <div id="lostLagoon" class="radial_inner">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		  <a href="images/fullscreen/1.jpg" title="sunita">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/2.jpg" title="anita">
           		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/3.jpg" title="erik">
           		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/4.jpg" title="experimentalSP">
           		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/5.jpg" title="">
           		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -171,31 +167,31 @@
         </div>
         
         <!-- Trout LakeNode -->
-        <div class='radial_container' id='radial_container_t' data-x="50" data-y="-50">
-          <div class="troutLake">
+        <div class='radial_container' id='radial_container_t' >
+          <div id="troutLake" class="radial_inner">
             <ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/1.jpg" rel="prettyPhoto[pp_gal]" title="">
+          		  <a href="images/fullscreen/1.jpg" title="jeanOhanley">
           		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/2.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/2.jpg" title="paula">
           		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/3.jpg" title="lawrence">
           		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/4.jpg" title="experimentalTL">
           		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/fullscreen/5.jpg" title="">
           		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
           		  </a></div>
           		</li>
@@ -203,82 +199,82 @@
           </div>
         </div>
   <!-- OCAD posters -->
-        <div class='radial_container' id="radial_container" data-x="75" data-y="-25" data-radial="200">
-          <div class="posters">
+        <div class='radial_container' id="radial_container"  data-x="95" data-y="-20" data-radial="200">
+          <div id="posters" class="radial_inner" title="OCAD Posters">
           	<ul class='list'>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/annual_carbon_uptake.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+          		  <a href="images/annual_carbon_uptake.jpg" class="lightbox" rel="gal" title="Annual Carbon Uptake">
           		    <img src="images/annual_carbon_uptake.jpg" width="30" height="30" alt="annual carbon uptake" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Biological-Control.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Biological-Control.jpg" class="lightbox" rel="gal" title="Biological Control">
           		    <img src="images/Biological-Control.jpg" width="30" height="30" alt="biological control" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Culture.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Culture.jpg" class="lightbox" rel="gal" title="Culture">
           		    <img src="images/Culture.jpg" width="30" height="30" alt="culture" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/culture-poster.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/culture-poster.jpg" class="lightbox" rel="gal" title="Culture">
           		    <img src="images/culture-poster.jpg" width="30" height="30" alt="culture" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Filtration_SQUARE.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Filtration_SQUARE.jpg" class="lightbox" rel="gal" title="Filtration Square">
           		    <img src="images/Filtration_SQUARE.jpg" width="30" height="30" alt="filteration square" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Flood_Control.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Flood_Control.jpg" class="lightbox" rel="gal" title="Flood Control">
           		    <img src="images/Flood_Control.jpg" width="30" height="30" alt="Flood Control" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/habitat-poster.jpg" rel="prettyPhoto[pp_gal]" title="OCAD Posters.">
+          		  <a href="images/habitat-poster.jpg" class="lightbox" rel="gal" title="Habitat">
           		    <img src="images/habitat-poster.jpg" width="30" height="30" alt="habitat poster" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/pollination-poster.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/pollination-poster.jpg" class="lightbox" rel="gal" title="Pollination">
           		    <img src="images/pollination-poster.jpg" width="30" height="30" alt="pollination poster" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Recreation.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Recreation.jpg" class="lightbox" rel="gal" title="Recreation">
           		    <img src="images/Recreation.jpg" width="30" height="30" alt="Recreation" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Regulation.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Regulation.jpg" class="lightbox" rel="gal" title="Regulation">
           		    <img src="images/Regulation.jpg" width="30" height="30" alt="Regulation" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/Removal-of-Air-Pollutants.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/Removal-of-Air-Pollutants.jpg" class="lightbox" rel="gal" title="Removal of Air Pollutants">
           		    <img src="images/Removal-of-Air-Pollutants.jpg" width="30" height="30" alt="Removal of Air Pollutants" />
           		  </a></div>
           		</li>
           		<li class='item'><div class='my_class'>
-          		  <a href="images/sediment_retention.jpg" rel="prettyPhoto[pp_gal]">
+          		  <a href="images/sediment_retention.jpg" class="lightbox" rel="gal" title="Sediment Retention">
           		    <img src="images/sediment_retention.jpg" width="30" height="30" alt="sediment retention" />
           		  </a></div>
           		</li>
           			</li>
             		<li class='item'><div class='my_class'>
-            		  <a href="images/seeddispersal-poster.jpg" rel="prettyPhoto[pp_gal]">
-            		    <img src="images/seeddispersal-poster.jpg" width="30" height="30" alt="seeddispersal poster" />
+            		  <a href="images/seeddispersal-poster.jpg" class="lightbox" rel="gal" title="Seed Dispersal">
+            		    <img src="images/seeddispersal-poster.jpg" width="30" height="30" alt="seed dispersal poster" />
             		  </a></div>
             		</li>
             		<li class='item'><div class='my_class'>
-            		  <a href="images/stored_carbon_forests.jpg" rel="prettyPhoto[pp_gal]">
+            		  <a href="images/stored_carbon_forests.jpg" class="lightbox" rel="gal" title="Stored Carbon Forests">
             		    <img src="images/stored_carbon_forests.jpg" width="30" height="30" alt="stored carbon forests" />
             		  </a></div>
             		</li>
             		<li class='item'><div class='my_class'>
-            		  <a href="images/Waste-Treatment.jpg" rel="prettyPhoto[pp_gal]">
+            		  <a href="images/Waste-Treatment.jpg" class="lightbox" rel="gal" title="Waste Treatment">
             		    <img src="images/Waste-Treatment.jpg" width="30" height="30" alt="Waste Treatment" />
             		  </a></div>
             		</li>
@@ -287,7 +283,12 @@
 
         </div>
   <!-- end OCAD posters -->
-        
+        <div id="logos">
+          <div id="caneryLogo"></div>
+          <div id="ocadLogo"></div>
+          <div id="ecuadLogo"></div>
+          <div id="dfsLogo"></div>
+        </div>
       </div>		   
 
     

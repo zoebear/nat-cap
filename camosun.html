@@ -9,12 +9,19 @@
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!-- Gallery Code -->
-<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
 
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
-<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.lightbox-0.5.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/jquery.lightbox-0.5.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.lightbox-0.5.pack.js" type="text/javascript" charset="utf-8"></script>
+
+
+<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+
+
 <script src="js/nat-cap.js" type="text/javascript" charset="utf-8"></script>
 
 
@@ -25,10 +32,40 @@
 
   <div id="header"></div>
   <div id="wrapper">
-    
-    <div id="content">
-    
+    <div id="gallery">
+       <a href="images/leaf.png" rel="lightbox"><img src="images/thumbnails/t_1.jpg" width="72" height="72" alt="" /></a>
     </div>
+       <div class='radial_container' id="radial_container_j" data-x="50" data-y="-50">
+          <div class="jericho">
+            <ul class='list'>
+          		<li class='item'><div class='my_class'>
+          		  <a href="images/fullscreen/1.jpg" rel="lightbox" title="">
+          		    <img src="images/thumbnails/t_1.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class' >
+          		  <a href="images/fullscreen/2.jpg" rel="lightbox">
+          		    <img src="images/thumbnails/t_2.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class' >
+          		  <a href="images/fullscreen/3.jpg" rel="lightbox">
+          		    <img src="images/thumbnails/t_3.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class' >
+          		  <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_4.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          		<li class='item'><div class='my_class' >
+          		  <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]">
+          		    <img src="images/thumbnails/t_5.jpg" width="30" height="30" alt="" />
+          		  </a></div>
+          		</li>
+          	</ul>
+          </div>
+        </div>
   </div>
   
 </body>

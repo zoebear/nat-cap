@@ -19,7 +19,7 @@
 }
 body {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #171614;
 }
 /* style from the DFS site */
 #header {
@@ -31,7 +31,6 @@ body {
 #container {
 	width: 100%;
 	height: auto;
-	/* height: 2030px;*/
 	position: relative;
 	top: 0px;	
 	margin: 0 auto;
@@ -43,53 +42,48 @@ body {
 	background: #fff;
 	padding: 0px;
 	height: auto;
-	/* height: 1750px;*/
 	position: relative;
 	margin: 0 auto;
 	top: 0px;
 }
 #wrapper {
-	min-width: 1024px;
-  max-width: 1280px;
-	min-height: 768px;
-	margin: 0 auto;
-	background-color: #333333;
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #333333;
 }
 
 #content { 
   min-width: 780px;
-  max-width: 1280px;
+  width: 1280px;
 }
 #map {
-  background: url('images/nodeMap2.png') top center no-repeat;
+  background: url('images/map3.png') top center no-repeat;
   width: 100%;
-  height: 812px;
+  height: 770px;
 }
+
 h1.title {
   font-family: zapfino;
   font-size: 20px;
+  position: relative;
+  top: 30px;
+  left: 50px;
 }
 h2 {
   font-size: 16px;
+  position: relative;
+  top: 30px;
+  left: 50px;
+
 }
 /* Start of radial node menus */
-
-#radial_container { 
-  position: relative;
-  bottom: 59%;
-  left: 47%;
-	width:200px; 
-	height:200px; 
-	text-align:center;
-}
 .radial_div_item {
-	background-color:none;
-	height:30px;
-	padding:10px;
-	color:#234;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	cursor:pointer;
+  height:30px; 
+  padding:10px;
+  color:#234;
+  border-radius:10px;
+  cursor:pointer;
 }
 .radial_div_item.active { 
 	background-color:#511; color:white;
@@ -111,96 +105,157 @@ h2 {
   height: 100%;
   
 }
-.posters{
-  position: relative;
-  background: url('images/leaf.png') no-repeat;
-  top: 50px;
-  left: 50px;
-  width: 100px;
-  height: 100px;
-} 
+/* west 4th and chancellor */
 #radial_container_w { 
   position: relative;
-  top: 48.3%;
-  left:10.9%;
-	width:200px; 
-	height:200px; 
-	text-align:center;
+  float: left;
+  top: 385px;
+  left: 132px; 
+  width:150px; 
+  height:150px; 
+  text-align:center;
 } 
-.west4 {
+#west4 {
   position: relative;
-  background: url('images/west4.png') no-repeat;
-  top: 50px;
-  left: 50px;
+  background: url('images/west4.png') center center no-repeat;
+  top: 25px;
+  left: 25px;
   width: 100px;
   height: 100px;
 }
+/*jericho */
 #radial_container_j { 
   position: relative;
-  top: 19.8%;
-  left: 26.35%;
-  width:200px; 
-  height:200px; 
+  float: left;
+  top: 365px;
+  left: 170px;
+  width:150px; 
+  height:150px; 
   text-align:center;
 }
-.jericho {
+#jericho {
   position: relative;
-  background: url('images/jericho.png') no-repeat;
-  top: 50px;
-  left: 50px;
+  background: url('images/jericho.png') center center no-repeat;
+  top: 25px;
+  left: 25px;
   width: 100px;
   height: 100px;
 }
+/*camosun bog*/
 #radial_container_c { 
   position: relative;
-  bottom: 49%;
-  left: 51.1%;
-  width:200px; 
-  height: 200px; 
+  float: left;
+  top: 524px;
+  left: 3px;
+  width: 150px; 
+  height: 150px; 
   text-align:center;
 }
-.camosun {
+#camosun {
   position: relative;
-  background: url('images/camosun.png') no-repeat;
-  top: 267.5%;
-  right: 151%;
+  background: url('images/camosun.png') center center no-repeat;
+  top: 25px;
+  left: 25px;
   width: 100px;
   height: 100px;
 }
+/*lost lagoon */
 #radial_container_l { 
   position: relative;
-  bottom: 60.7%;
-  left: 54.1%;
-  width:200px; 
-  height:200px; 
+  float: left;
+  top: 136px;
+  left: 226px;
+  width:150px; 
+  height:150px; 
   text-align:center;
 }
-.lostLagoon {
+#lostLagoon {
   position: relative;
-  background: url('images/lostlagoon.png') no-repeat;
-  top: 50px;
-  left: 50px;
+  background: url('images/lostlagoon.png') center center no-repeat;
+  top: 30px;
+  left: 25px;
   width: 100px;
   height: 100px;
 }
-#radial_container_t { 
+/*ocad posters */
+#radial_container { 
   position: relative;
-  float: right;
-  bottom: 42.4%;
-  left: 4.25%;
-  width:200px; 
-  height:200px; 
+  float: left;
+  top: 365px;
+  right: 35px; 
+  width:230px; 
+  height:230px; 
   text-align:center;
 }
-.troutLake {
+#posters{
   position: relative;
-  background: url('images/troutlake.png') no-repeat;
-  top: 50px;
-  left: 50px;
+  background: url('images/leaf.png') center center no-repeat;
+  width: 100px;
+  height: 100px;
+  top: 55px;
+  left: 70px;
+} 
+/*trout lake */
+#radial_container_t { 
+  position: relative;
+  float: left;
+  float: right;
+  top: 509px;
+  right: 2px;
+  width: 150px; 
+  height: 150px; 
+  text-align:center;
+}
+#troutLake {
+  position: relative;
+  background: url('images/troutlake.png') center center no-repeat;
+  top: 25px;
+  left: 20px;
   width: 100px;
   height: 100px;
 }
 /*end of radial node menus */
+/* logos */
+#logos{
+  position: relative;
+  float: right;
+  height: auto;
+  width: 500px;
+  top: 470px;
+  left: 50px;
+}
+#caneryLogo{
+  background: url('images/CanneryLogoB&W.png') no-repeat;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  float:left;
+  margin-right: 20px
+  
+}
+#ocadLogo{
+  background: url('images/OCADU.png') no-repeat;
+  height: 60px;
+  width: 72px;
+  float: left;
+  margin-left: 15px;
+}
+#ecuadLogo{
+  background: url('images/ecuadlogo.png') no-repeat;
+  height: 60px;
+  width: 60px;
+  float:left;
+  top: 670px;
+  margin-left: 25px;
+}
+#dfsLogo{
+  background: url('images/DSF-logo-RGB-notagline.png') no-repeat;
+  height: 60px;
+  width: 130px;
+  float:left;
+  top: 670px;
+  margin-left: 35px;
+}
 #footer {
   background: url('images/footerPlaceholder.jpg') center top no-repeat;
   min-width: 1024px;
@@ -317,7 +372,7 @@ h2 {
 }
 
 
-#expVideos
+#expVideos{}
 
 /*jericho beach specific styles*/
 /*4th street vid page styles*/
