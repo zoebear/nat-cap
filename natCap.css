@@ -5,6 +5,13 @@
        url('fonts/Zapfino.eot'); /* IE */
 }
 
+@font-face {
+  font-family: gill sans light;
+  src: url('fonts/GillSansLight.ttf'),
+       url('fonts/GillSansLight.eot'); /* IE */
+
+}
+
 
 * {
  padding: 0;
@@ -253,12 +260,11 @@ h2 {
 }
 
 #vidsContainertext{
-	
 	background: center no-repeat;
 	top: 65px;
 	position:relative;
 	width: 100%;
-	height: 150px;
+	height: 250px;
 	margin: 0 auto;
 		
 }
@@ -296,6 +302,18 @@ h2 {
 	margin-left: 165px;
 	position: relative;
 	float: left;
+}
+
+#wetlandTitle{
+	margin: 0 auto;
+	width:500px;
+	height:50px;
+	margin-left:460px;
+	top:180px;
+	position:absolute;
+	font-family: zapfino;
+	font-size:25px;
+	color:#FFF;
 }
 
 
