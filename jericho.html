@@ -2,35 +2,21 @@
 
 <html>
 <head>
+<!-- style sheet links-->  
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
+<link rel="stylesheet" href="css/jquery-ui-1.9.1.custom.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!-- Gallery Code -->
-<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
-
-<link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<!-- js code file links-->
 
 <script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
 <script  src='js/jQuery.radmenu.min.js' type='text/javascript' charset="utf-8"></script>
-
-<script src="js/jquery.nyroModal.custom.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/nat-cap.js" type="text/javascript" charset="utf-8"></script>
-
-<script type="text/javascript">
-$(function() {
-  $('.nyroModal').nyroModal();
-});
-</script>
-<script type="text/javascript">
-$(function() {
-  $.nmObj({embedly: {key: 'cccfc184e164461cb3e200521bc1c2ae'}});
-});
-</script>
-
+<script  src='js/wetland.js' type='text/javascript' charset="utf-8"></script>
+<script src="js/swfobject.js" type="text/javascript" charset="utf-8"></script>
 
 <title>Natural Capital - Jericho Park WetLands</title>
 </head>
@@ -40,6 +26,7 @@ $(function() {
   <div id="header"></div>
   <div id="wrapper">
     <div id="content">
+<<<<<<< HEAD
      <div id="wetlandTitle"><h1>Jericho Park</h1></div>  
       		<div id="mainVideos">
        	  		<div id="vidsContainer">
@@ -54,10 +41,59 @@ $(function() {
             		<div id="interviewVid3text"></div>
             	</div>
     </div>    
-        <div id="expVideos">
-    		<!-- add vids -->   
+=======
+      <h1 id="wetTitle">Jericho</h1>
+      <nav id="nav">
+        <a href="natCapMap.html" class="nav">Natural Capital <em>|</em> </a> 
+        <a href="west4.html" class="nav">West 4th &amp; Chancellor <em>|</em> </a> 
+  	    <a href="jericho.html" class="nav">Jerico <em>|</em> </a> 
+  	    <a href="camosun.html" class="nav">Camosun Bog <em>|</em> </a> 
+        <a href="lostlagoon.html" class="nav">Lost Lagoon <em>|</em> </a> 
+        <a href="troutlake.html" class="nav">Trout Lake</a>     
+      </nav>
+      <div id="mainVideos">
+        <div id="vidsContainer">
+          <div id="interviewVid4" class="interviewVid1">
+            <a href="#">
+              <img src="images/stephencampbell.jpg" width="274" height="150" alt="Stephencampbell">
+           </a>
+          </div>
+          <div id="interviewVid5" class="interviewVid2">
+            <a href="#">
+              <img src="images/jeanguy.jpg" width="274" height="150" alt="Jeanguy">
+            </a>
+          </div>
+          <div id="interviewVid6" class="interviewVid3">
+            <a href="images/annakim.jpg">
+              <img src="images/annakim.jpg" width="274" height="150" alt="Anna Kim">
+            </a>
+          </div>
+          </div>
+          <div id="vidsContainertext">
+            <div id="interviewVid1text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+            <div id="interviewVid2text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+            <div id="interviewVid3text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+          </div>
         </div>    
-    	</div>
-  	</div>
+>>>>>>> navs, galleries, code and more code
+        <div id="expVideos">
+             
+        </div>    
+    </div>
+  </div>
   
+
+  <div id="video_dialog" title="Jericho Video">
+  	<div id="vid1"></div>
+  </div>
+
 </body>

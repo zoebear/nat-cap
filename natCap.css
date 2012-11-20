@@ -5,13 +5,6 @@
        url('fonts/Zapfino.eot'); /* IE */
 }
 
-@font-face {
-  font-family: gill sans light;
-  src: url('fonts/GillSansLight.ttf'),
-       url('fonts/GillSansLight.eot'); /* IE */
-
-}
-
 
 * {
  padding: 0;
@@ -50,7 +43,7 @@ body {
   width: 1280px;
   height: auto;
   margin: 0 auto;
-  background-color: #333333;
+  
 }
 
 #content { 
@@ -65,36 +58,37 @@ body {
 
 h1.title {
   font-family: zapfino;
-  font-size: 20px;
+  font-size: 30px;
+  color: #333333;
   position: relative;
   top: 30px;
   left: 50px;
 }
-h2 {
-  font-size: 16px;
+#nodes {
+  width: 100%;
+  height: 770px;
   position: relative;
-  top: 30px;
-  left: 50px;
-
+  top: 24px;
 }
 /* Start of radial node menus */
 .radial_div_item {
   height:30px; 
   padding:10px;
-  color:#234;
+  color: #234;
   border-radius:10px;
   cursor:pointer;
 }
 .radial_div_item.active { 
-	background-color:#511; color:white;
+	 
+	color:white;
 	padding: 10px; 
-	-moz-border-radius:40px;
+	
 	z-index:100;
 }
 .my_class { 
 	font-size:1.5em; 
 	color:#abc;
-	background-color:#def;
+	
 	-moz-border-radius:30px;
 	width:30px;
 	height:30px;
@@ -105,12 +99,36 @@ h2 {
   height: 100%;
   
 }
+a img{
+    border-radius: 5px;
+}
+.wetname{
+  position: absolute;
+  top: -50px;
+  left:-30px;
+  font-size: 14px;
+  color: #322620;
+  font-family: Verdana, Helvetica, Arial;
+  letter-spacing: 1px;
+  display: none;
+  width: 200px;
+}
+#ocadPosters{
+  position: absolute;
+  top: 230px;
+  left:60px;
+  font-size: 14px;
+  color: #322620;
+  font-family: Verdana, Helvetica, Arial;
+  letter-spacing: 1px;
+  display: none;
+}
 /* west 4th and chancellor */
 #radial_container_w { 
   position: relative;
   float: left;
-  top: 385px;
-  left: 132px; 
+  top: 362px;
+  left: 133px; 
   width:150px; 
   height:150px; 
   text-align:center;
@@ -127,7 +145,7 @@ h2 {
 #radial_container_j { 
   position: relative;
   float: left;
-  top: 365px;
+  top: 341px;
   left: 170px;
   width:150px; 
   height:150px; 
@@ -145,7 +163,7 @@ h2 {
 #radial_container_c { 
   position: relative;
   float: left;
-  top: 524px;
+  top: 500px;
   left: 3px;
   width: 150px; 
   height: 150px; 
@@ -163,7 +181,7 @@ h2 {
 #radial_container_l { 
   position: relative;
   float: left;
-  top: 136px;
+  top: 113px;
   left: 226px;
   width:150px; 
   height:150px; 
@@ -181,7 +199,7 @@ h2 {
 #radial_container { 
   position: relative;
   float: left;
-  top: 365px;
+  top: 340px;
   right: 35px; 
   width:230px; 
   height:230px; 
@@ -200,8 +218,8 @@ h2 {
   position: relative;
   float: left;
   float: right;
-  top: 509px;
-  right: 2px;
+  top: 485px;
+  right: 3px;
   width: 150px; 
   height: 150px; 
   text-align:center;
@@ -221,8 +239,8 @@ h2 {
   float: right;
   height: auto;
   width: 500px;
-  top: 470px;
-  left: 50px;
+  top: 450px;
+  left: 0px;
 }
 #caneryLogo{
   background: url('images/CanneryLogoB&W.png') no-repeat;
@@ -238,7 +256,7 @@ h2 {
   height: 60px;
   width: 72px;
   float: left;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 #ecuadLogo{
   background: url('images/ecuadlogo.png') no-repeat;
@@ -246,7 +264,7 @@ h2 {
   width: 60px;
   float:left;
   top: 670px;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 #dfsLogo{
   background: url('images/DSF-logo-RGB-notagline.png') no-repeat;
@@ -254,7 +272,7 @@ h2 {
   width: 130px;
   float:left;
   top: 670px;
-  margin-left: 35px;
+  margin-left: 15px;
 }
 #footer {
   background: url('images/footerPlaceholder.jpg') center top no-repeat;
@@ -264,14 +282,45 @@ h2 {
 }
 
 /*these styles are for video pages*/
+#nav {
+  position: relative;
+  float: right;
+  top: 12px;
+  right: 130px;
+  clear: right;
+  font-size: 12px;
+  color: ##1A4646
+  
+}
+.nav {
+  text-decoration: none;
+  font-size: 12px;
+  color:#ffffff;
+  font-family: Helvetica, Arial;
+  letter-spacing: 2px;
+  
+}
+a em {
+  color:#1a4646;  
+}
+#wetTitle {
+  font-family: zapfino, Helvetica;
+  font-size: 30px;
+  color: #1A4646;
+  position: relative;
+  top: 30px;
+  left: 200px;
+}
+
 #mainVideos{
+    clear: both;
 	background: rgba(255,255,255, 0.5) center no-repeat;
 	position:relative;
 	width: 80%;
 	min-width: 900px;
 	height: 500px;
 	margin: 0 auto;
-	top: 120px;
+	top: 40px;
 	border-radius:20px;
 	
 	
@@ -279,7 +328,7 @@ h2 {
 
 #vidsContainer{
 	background: center no-repeat;
-	top: 50px;
+	top: 20px;
 	position:relative;
 	width: 100%;
 	height: 150px;
@@ -287,33 +336,40 @@ h2 {
 		
 }
 
-#interviewVid1{
+.interviewVid1{
 	background:#666;
-	width: 15%;
-	height: 100px;
-	margin-left: 60px;
+	width: 274px;
+	height: 100%;
+	margin-left: 70px;
 	position: relative;
 	float: left;
+	border-radius: 5px;
 }
 
-#interviewVid2{
-	background:#666;
-	width: 15%;
-	height: 100px;
-	margin-left: 165px;
+.interviewVid2{
+	width: 274px;
+	height: 100%;
+	margin-left: 30px;
 	position: relative;
 	float:left;
 }
 
-#interviewVid3{
-	background:#666;
-	width: 15%;
-	height: 100px;
-	margin-left: 165px;
+.interviewVid3{
 	position: relative;
 	float: left;
+	width: 274px;
+	height: 100%;
+	margin-left: 30px;
+	
 }
-
+.vidTitle {
+  font-size: 16px;
+  color: #0F5A5A;
+  position: relative;
+  right: 4px;
+  margin-bottom: 10px;
+   
+}
 #vidsContainertext{
 	background: center no-repeat;
 	top: 65px;
@@ -325,50 +381,39 @@ h2 {
 }
 
 #interviewVid1text{
-	background:#666;
-	width: 15%;
+	width: 25%;
 	height: 100%;
-	margin-left: 60px;
+	margin-left: 70px;
 	position: relative;
 	float: left;
-}
-#interviewVid1{
-	background:#666;
-	width: 15%;
-	height: 100px;
-	margin-left: 60px;
-	position: relative;
-	float: left;
+	padding: 5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 20px;
 }
 
 #interviewVid2text{
-	background:#666;
-	width: 15%;
+	width: 25%;
 	height: 100%;
-	margin-left: 165px;
+	margin-left: 35px;
 	position: relative;
 	float:left;
+	padding: 5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 20px;
 }
 
 #interviewVid3text{
-	background:#666;
-	width: 15%;
+	width: 25%;
 	height: 100%;
-	margin-left: 165px;
+	margin-left: 40px;
 	position: relative;
 	float: left;
-}
-
-#wetlandTitle{
-	margin: 0 auto;
-	width:500px;
-	height:50px;
-	margin-left:460px;
-	top:180px;
-	position:absolute;
-	font-family: zapfino;
-	font-size:25px;
-	color:#FFF;
+	padding: 5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 20px;
 }
 
 

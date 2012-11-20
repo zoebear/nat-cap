@@ -2,50 +2,91 @@
 
 <html>
 <head>
+<!-- style sheet links-->  
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
+<link rel="stylesheet" href="css/jquery-ui-1.9.1.custom.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="natCap.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!-- Gallery Code -->
-<script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script type='text/javascript' src='js/jQuery.radmenu.min.js'></script>
+<!-- js code file links-->
 
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
+<script  src='js/jQuery.radmenu.min.js' type='text/javascript' charset="utf-8"></script>
+<script  src='js/wetland.js' type='text/javascript' charset="utf-8"></script>
+<script src="js/swfobject.js" type="text/javascript" charset="utf-8"></script>
 
+<<<<<<< HEAD
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/nat-cap.js" type="text/javascript" charset="utf-8"></script>
 
 
+=======
+>>>>>>> navs, galleries, code and more code
 <title>Natural Capital - Trout Lake</title>
 </head>
 
 <body>
-
   <div id="header"></div>
   <div id="wrapper">
-    
     <div id="content">
+<<<<<<< HEAD
     <div id="wetlandTitle"><h1>Trout Lake</h1></div> 
+=======
+      <h1 id="wetTitle">Trout Lake</h1>
+      <nav id="nav">
+        <a href="natCapMap.html" class="nav">Natural Capital <em>|</em> </a> 
+        <a href="west4.html" class="nav">West 4th &amp; Chancellor <em>|</em> </a> 
+  	    <a href="jericho.html" class="nav">Jerico <em>|</em> </a> 
+  	    <a href="camosun.html" class="nav">Camosun Bog <em>|</em> </a> 
+        <a href="lostlagoon.html" class="nav">Lost Lagoon <em>|</em> </a> 
+        <a href="troutlake.html" class="nav">Trout Lake</a>     
+      </nav>
+>>>>>>> navs, galleries, code and more code
       <div id="mainVideos">
-       	  <div id="vidsContainer">
-    			<div id="interviewVid1"><iframe width="267" height="150" src="http://www.youtube.com/embed/InYz51Kq0SI" frameborder="0" allowfullscreen></iframe></div>
-            	<div id="interviewVid2"><iframe width="267" height="150" src="http://www.youtube.com/embed/m9AdpuY1feo" frameborder="0" allowfullscreen></iframe></div>
-            	<div id="interviewVid3"><iframe width="267" height="150" src="http://www.youtube.com/embed/QPjy-DL9URQ" frameborder="0" allowfullscreen></iframe></div>
-        	</div>
-        <div id="vidsContainertext">
-    			<div id="interviewVid1text"></div>
-            	<div id="interviewVid2text"></div>
-            	<div id="interviewVid3text"></div>
-             </div>
+        <div id="vidsContainer">
+          <div id="interviewVid13" class="interviewVid1">
+            <a href="#">
+              <img src="images/paulajardine.jpg" width="274" height="150" alt="Paula Jardine">
+           </a>
+          </div>
+          <div id="interviewVid14" class="interviewVid2">
+            <a href="#">
+              <img src="images/laurencebrown.jpg" width="274" height="150" alt="Laurence Brown">
+            </a>
+          </div>
+          <div id="interviewVid15" class="interviewVid3">
+            <a href="#">
+              <img src="images/jeanohanley.jpg" width="274" height="150" alt="Jean O'Hanley">
+            </a>
+          </div>
+          </div>
+          <div id="vidsContainertext">
+            <div id="interviewVid1text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+            <div id="interviewVid2text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+            <div id="interviewVid3text">
+              <h2 class="vidTitle">Video Name</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed felis lectus. Nam ullamcorper sem vel ligula tempus interdum. Vestibulum eu molestie nisl. Sed id velit nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            </div>
+          </div>
         </div>    
-        
         <div id="expVideos">
-    		<!-- add vids -->   
+             
         </div>    
-    
     </div>
   </div>
   
+
+  <div id="video_dialog" title="Lost Lagoon Video">
+  	<div id="vid1"></div>
+  </div>
+
 </body>

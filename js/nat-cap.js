@@ -4,6 +4,7 @@ var y = 0;
 var radial = 0;
 var scale_up;
 var scale_down;
+var toggle = false;
 
 $(document).ready(function(){
 
@@ -43,8 +44,8 @@ $.each($(".radial_container"), function(i, sel){
   	initialScale: 0.1,//0.1
   	scaleAnimEasing: "swing", // the type of easing used when animating
   	scaleAnimOpts: {}, // the animation options you desire to apply to scaling
-  	centerX: (x || 45), // the center x axis offset
-  	centerY: (y || -50), // the center y axis offset
+  	centerX: (x || 35), // the center x axis offset
+  	centerY: (y || -60), // the center y axis offset
   	angleOffset: 0 // in degrees
   });
   
@@ -53,20 +54,25 @@ $.each($(".radial_container"), function(i, sel){
 
 
 $(".radial_inner").on('mouseenter', function(e){
-  if (n) { return; }
-  //console.log("enter");
-  $(".radial_container").radmenu("hide");
+  if (toggle) { return; }
+  toggle = true;
   clearTimeout(scale_down);
   clearTimeout(scale_up);
   n = 0;
-  
+
+  $(this).parent().find('.wetname').fadeIn('slow');
+  $(this).parent().find('#ocadPosters').fadeIn('slow');
+  $(".radial_container").radmenu("hide");
+
   $(this).parent().radmenu("show");
   $('a.lightbox').nyroModal(); // Select all links with lightbox class
   scaleMenuUp($(this).parent().attr("id"));
 });
 
 $(".radial_container").on('mouseleave', function(e){
-  //console.log("leave");
+  toggle = false;
+  $(this).parent().find('.wetname').fadeOut('fast');
+  $(this).parent().find('#ocadPosters').fadeOut('slow');
   clearTimeout(scale_up);
   clearTimeout(scale_down);
   scaleMenuDown($(this).attr("id"));
